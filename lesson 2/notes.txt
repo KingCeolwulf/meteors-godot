@@ -1,7 +1,8 @@
+Lesson 1:
 install an atlas plugin then in project settings turn it on
 import the atlas for the sprites
 (alternatively for download size purposes, I picked out the exact files that were needed since that is actually more than needed for this project)
-create the nodes for player and its children
+create the nodes for Area2D player and its children
 create folder for scenes and scripts
 in project settings/input map, update the input map
 "player_left" - a or left
@@ -9,3 +10,14 @@ in project settings/input map, update the input map
 "player_thrust" - w or up
 "player_shoot" - spacebar
 create a script and play
+
+Lesson 2:
+create a new scene for bullet
+create Area2d node for for the bullet and its children classes (sprite, collisionshape2d)
+add sprite image and set the capsule shape for the collision, adjust as needed
+add plain node as a bullet_container and load PackedScene for the bullet in player
+create a timer lifetime in bullet scene, set it autostart and give it some desired time
+create a position2d muzzle in player scene
+create a time gun_timer in player scene, set it to one shot and give it some desired time
+
+
