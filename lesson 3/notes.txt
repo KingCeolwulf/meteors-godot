@@ -1,0 +1,11 @@
+install an atlas plugin then in project settings turn it on
+import the atlas for the sprites
+(alternatively for download size purposes, I picked out the exact files that were needed since that is actually more than needed for this project)
+create the nodes for player and its children
+create folder for scenes and scripts
+in project settings/input map, update the input map
+"player_left" - a or left
+"player_right" - d or right
+"player_thrust" - w or up
+"player_shoot" - spacebar
+create a script and play
