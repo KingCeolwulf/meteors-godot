@@ -1,2 +1,0 @@
-# meteors-godot
- Godot Meteors!
