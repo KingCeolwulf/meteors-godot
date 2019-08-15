@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/Bullet.gd" type="Script" id=1]
+[ext_resource path="res://art/laser.png" type="Texture" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 5.31181
+height = 41.8186
+
+[node name="bullet" type="Area2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="lifetime" type="Timer" parent="."]
+wait_time = 0.35
+autostart = true
+[connection signal="timeout" from="lifetime" to="." method="_on_lifetime_timeout"]

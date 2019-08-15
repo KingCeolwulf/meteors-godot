@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/Main.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Meteor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=3]
+
+[node name="main" type="Node"]
+script = ExtResource( 1 )
+Mob = ExtResource( 2 )
+
+[node name="player" parent="." instance=ExtResource( 3 )]
+
+[node name="spawn_locations" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="1" type="Position2D" parent="spawn_locations"]
+position = Vector2( 560.135, 111.067 )
+
+[node name="2" type="Position2D" parent="spawn_locations"]
+position = Vector2( 303.094, 111.067 )
+
+[node name="3" type="Position2D" parent="spawn_locations"]
+position = Vector2( 794.963, 126.934 )
+
+[node name="4" type="Position2D" parent="spawn_locations"]
+position = Vector2( 878.561, 248.498 )
+
+[node name="5" type="Position2D" parent="spawn_locations"]
+position = Vector2( 626.421, 260.287 )
+
+[node name="6" type="Position2D" parent="spawn_locations"]
+position = Vector2( 393.352, 263.907 )
+
+[node name="7" type="Position2D" parent="spawn_locations"]
+position = Vector2( 119.94, 267.086 )
+
+[node name="8" type="Position2D" parent="spawn_locations"]
+position = Vector2( 129.008, 108.377 )

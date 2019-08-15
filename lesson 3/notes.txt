@@ -24,6 +24,10 @@ Lesson 3:
 create KinematicBody2D for the meteors and two children
 add image and set circle shape for the collision and adjust as needed
 make the children unselectable for the meteor and move it to the middle
-## write script
+create a new scene for main and create a plain node
+in Project Settings/Application/Run change the main scene to the new main (it was likely player until now)
+
+Lesson 4:
+
 
 

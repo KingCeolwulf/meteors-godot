@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://scenes/Bullet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://art/PlayerShip.png" type="Texture" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 27.2748
+
+[node name="player" type="Area2D"]
+script = ExtResource( 1 )
+friction = 1.7
+bullet = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="bullet_container" type="Node" parent="."]
+
+[node name="muzzle" type="Position2D" parent="."]
+position = Vector2( 0, -50 )
+
+[node name="gun_timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
